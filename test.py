@@ -52,30 +52,30 @@ window.geometry("400x350")
 window.resizable(False, False)
 
 # Заголовок
-title_label = tk.Label(window, text="Игра 'Угадай число!'", font=("Arial", 18, "bold"))
+title_label = tk.Label(window, text="Игра 'Угадай число!'", font=("Comic Sans MS", 18, "bold"))
 title_label.pack(pady=10)
 
 # Описание
-desc_label = tk.Label(window, text="Компьютер загадал число от 1 до 100\nПопробуйте угадать это число\nУ вас есть 10 попыток\nУдачи!", font=("Arial", 10))
+desc_label = tk.Label(window, text="Компьютер загадал число от 1 до 100\nПопробуйте угадать это число\nУ вас есть 10 попыток\nУдачи!", font=("Comic Sans MS", 10))
 desc_label.pack(pady=5)
 
 # Поле ввода
-entry = tk.Entry(window, font=("Arial", 14), justify="center", width=10)
+entry = tk.Entry(window, font=("Comic Sans MS", 14), justify="center", width=10)
 entry.pack(pady=10)
 
 # Кнопка проверки
-guess_button = tk.Button(window, text="Проверить", font=("Arial", 12), bg="green", fg="black", width=15, command=check_guess)
+guess_button = tk.Button(window, text="Проверить", font=("Comic Sans MS", 12), bg="green", fg="black", width=15, command=check_guess)
 guess_button.pack(pady=5)
 
 # Статусная информация
-attempts_label = tk.Label(window, text=f"Попыток 0 из {max_attempts}", font=("Arial", 11))
+attempts_label = tk.Label(window, text=f"Попыток 0 из {max_attempts}", font=("Comic Sans MS", 11))
 attempts_label.pack(pady=10)
 
-message_label = tk.Label(window, text="Нажми 'Новая игра', чтобы начать", font=("Arial", 10), fg="blue")
+message_label = tk.Label(window, text="Нажми 'Новая игра', чтобы начать", font=("Comic Sans MS", 10), fg="blue")
 message_label.pack(pady=10)
 
 # Кнопка новой игры
-new_button = tk.Button(window, text="Новая игра", font=("Arial", 12), bg="blue", fg="black", width=15, command=new_game)
+new_button = tk.Button(window, text="Новая игра", font=("Comic Sans MS", 12), bg="blue", fg="black", width=15, command=new_game)
 new_button.pack(pady=10)
 
 window.mainloop()
